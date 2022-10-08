@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+<title>
+JavaScript project
+</title>
+<meta charset='utf-8'>
+<meta name="author" content="Ivan Segade Carou">
+ 
+   
+  </head>
+
+  <body onload="timeLeft(), loadMake()">
+
+<div>
+<p>Time left:
+<input type="text" id="txttimeleft" title="time left" readonly>
+</div>
+
+<br>
+<div id="divtt">
+<h4>Tooltip</h4>
+<br>
+<p id="para">
+</p>
+</div>
+
+
+<div>
+<form action="submission.html" method="get" id="f1" name="myForm">
+<table id="t1">
+<tr>
+<td>Name: <b id="namett">*</b></td>
+<td>
+<input type="text" id="txtname" title="name">
+</td>
+</tr>
+
+<tr>
+<td>Age: </td>
+<td>
+<input type="text" id="txtage" title="age" maxlength="2" size="4">
+</td>
+</tr>
+
+<tr>
+<td>Gender: </td>
+<td>
+Male <input type="radio" name="gender" id="rdmale" title="male" value="400">
+&nbsp;&nbsp;&nbsp;
+Female <input type="radio" name="gender" id="rdfemale" title="female" value="200">
+</td>
+</tr>
+
+<tr>
+<td>Telephone: </td>
+<td>
+<input type="text" id="txtphone" title="telephone" maxlength="10" size="12">
+</td>
+</tr>
+
+<tr>
+<td>Policy start day: <b id="startdaytt">*</b></td>
+<td>
+<input type="text" id="txtstartday" title="policy start day" >
+</td>
+</tr>
+
+<tr>
+<td>Type of cover: </td>
+<td>
+<select id="cbocover" title="type of cover">
+<option value="0">---</option>
+<option value="400">Fully Comprehensive </option>
+<option value="200">Third Party Fire and theft
+</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Make: </td>
+<td>
+<select id="cbomake" title="make">
+<option value="0">---</option>
+ </select>
+</td>
+</tr>
+
+<tr>
+<td>Model: </td>
+<td>
+<select id="cbomodel" title="model" >
+<option value="0">---</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td>Fuel Type: </td>
+<td>
+<select id="cbofuel" title="fuel">
+<option value="0">---</option>
+<option value="50">Diesel</option>
+<option value="40">Petrol</option>
+<option value="20">Hybrid</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td>NCar age: </td>
+<td>
+<input type="text" id="txtcarage" title="car age" maxlength="2" size="4">
+</td>
+</tr>
+
+<tr>
+<td>Claims Free For: </td>
+<td>
+<select id="cboclaims" title="Claims Free For">
+<option value="0">---</option>
+<option value="100">	1 Year</option>
+<option value="80">2 Years</option>
+<option value="60">3 Years</option>
+<option value="40">4 Years</option>
+<option value="20"> > 5 Years</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Mileage per year: <b id="milestt">*</b></td>
+<td>
+<input type="text" id="txtmiles" title="milage per year">
+</td>
+</tr>
+
+<tr>
+<td>Value of car: </td>
+<td>
+<input type="text" id="txtcarvalue" title="Value of car">
+</td>
+</tr>
+
+<tr>
+<td>Security: </td>
+<td>
+None <input type="radio" name="security" id="rdnone" title="none" value="100">
+Alarm <input type="radio" name="security" id="rdalarm" title="alarm" value="70">
+Immobiliser <input type="radio" name="security" id="rdimmobiliser" title="Immobiliser" value="50">
+Alarm & Immobiliser <input type="radio" name="security" id="rdalarmimmobi" title="Alarm & Immobiliser" value="30">
+Tracking device alarm & Immobiliser <input type="radio" name="security" id="rdtracking" title="Tracking device alarm & Immobiliser" value="10">
+</td>
+</tr>
+
+<tr>
+<td>What is car being used for:   </td>
+<td>
+<select id="cbocaruse" title="What is car being used for">
+<option value="0">---</option>
+<option value="30">Social Domestic and Pleasure</option>
+<option value="50">Class 1 Use</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Running total</td> 
+<td>
+<input type="text" id="txttotal" title="running total" value="0" readonly>
+</td>
+ 
+</table>
+<br>
+<input type="submit" id="submit" value="Submit" accesskey="j">
+</form>
+ 
+</div>
+
+<script  src="project.js">
+</script>
+</body>
+</html> 

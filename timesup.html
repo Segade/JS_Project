@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+<title>
+Time is up 
+</title>
+<meta charset='utf-8'>
+<meta name="author" content="Ivan Segade Carou">
+   
+  </head>
+
+  <body>
+<h1> Time is up </h1>
+<p> 
+You have run out the time you had to fill up the form. Press the link below to go back to the form
+</P>
+<br>
+<a href="index.html" id="back">Back to the form</a>
+
+<script >
+ 
+let back = document.getElementById("back");
+back.addEventListener("click", function () {
+ window.open("index.html", "home");
+self.close();
+}, false);
+</script>
+</body>
+</html> 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+<title>
+Submission results 
+</title>
+<meta charset='utf-8'>
+<meta name="author" content="Ivan Segade Carou">
+    
+  </head>
+
+  <body>
+<h1>Congratulations</h1>
+<h3>We received your request with the following details</h3>
+<br><br>
+<script>
+let value;
+let a = 0;
+value = sessionStorage.getItem("name");
+document.write("<br><b>your name is: </b>" + value);
+
+value = sessionStorage.getItem("age");
+document.write("<br><b>your age is: </b>" + value);
+
+a = Number(sessionStorage.getItem("gender"));
+ if (a == 400)
+value = "Male";
+else
+value = "Female";
+document.write("<br><b>your gender is: </b>" + value);
+
+value = sessionStorage.getItem("phone");
+document.write("<br><b>your phone is: </b>" + value);
+
+value = sessionStorage.getItem("startday");
+document.write("<br><b>your policy start day is: </b>" + value);
+
+value = sessionStorage.getItem("cover");
+document.write("<br><b>your type of cover is: </b>" + value);
+
+value = sessionStorage.getItem("make");
+document.write("<br><b>your make is: </b>" + value);
+
+value = sessionStorage.getItem("model");
+document.write("<br><b>your model is: </b>" + value);
+
+value = sessionStorage.getItem("fuel");
+document.write("<br><b>your type of fuel is: </b>" + value);
+
+value = sessionStorage.getItem("carage");
+document.write("<br><b>your car age is: </b>" + value);
+
+value = sessionStorage.getItem("claims");
+document.write("<br><b>your claims free is: </b>" + value);
+
+value = sessionStorage.getItem("miles");
+document.write("<br><b>Your milage per year is: </b>" + value);
+
+
+value = sessionStorage.getItem("carvalue");
+document.write("<br><b>The value of your car is: </b>" + value);
+
+a = sessionStorage.getItem("security");
+switch (a)
+{
+case "100": value = "None";
+break;
+case "70": value = "Alarm";
+break;
+case "50": value = "Immobiliser";
+break;
+case "30": value = "Alarm & Immobiliser";
+break;
+case "10": value = "Tracking device alarm & Immobiliser";
+break;
+} // end switch 
+document.write("<br><b>The security you have is: </b>" + value);
+
+value = sessionStorage.getItem("caruse");
+document.write("<br><b>Your car is being used for is: </b>" + value);
+
+value = sessionStorage.getItem("total");
+document.write("<br><b>The total amount is: </b>" + value);
+
+</script>
+
+</body>
+</html> 
